@@ -51,10 +51,14 @@ main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    width: 300px;
 }
-.questions a, .questions ul {
+.questions a {
     width: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto 0;
+}
+.questions ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 285px;
 }
 
 .questions__im {
