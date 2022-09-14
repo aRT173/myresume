@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--lang=ru контент страницы на русском-->
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -17,61 +16,55 @@
         </header>
         <main class="main">
             <section class="questions">
-                <div class="questions__im im">
+                <div class="im">
                     <div class="im__photo">
-                        <img src="./img/photo.png" alt="photo">
+                        <img class="img" src="./img/photo.png" alt="photo">
                     </div>
-                    <div class="im__name">
-<!--                        этот p лишён смысла-->
-                        <p style="display: none;"></p>
-<!--                        ФИО это заголовок, параграфы используются для статей,-->
-<!--                        далее по коду нет ни одного места где нужен параграф, это всё div тег-->
-                        <p>Афанасьев Артём Александрович</p>
-                    </div>
+                        <h2 class="im_name">Афанасьев Артём Александрович</h2>
                 </div>
-                <div class="questions__edu">
-                    <p>Текущий курс обучения если имеется</p>
-                    <p>3 курс МГУ им. Н. П. Огарёва</p>
+                <div class="question">
+                    <div class="heading">Текущий курс обучения если имеется</div>
+                    <div class="text">3 курс МГУ им. Н. П. Огарёва</div>
                 </div>
-                <div class="questions__job">
-                    <p>Стаж и место работы если имеется</p>
-                    <p>Отсутсвует</p>
+                <div class="question">
+                    <div class="heading">Стаж и место работы если имеется</div>
+                    <div class="text">Отсутсвует</div>
                 </div>
-                <div class="questions__programming-exp">
-                    <p>Опыт программирования вне университета</p>
-                    <p>Немного кодил на js. Был небольшой опыт с python, php</p>
+                <div class="question">
+                    <div class="heading">Опыт программирования вне университета</div>
+                    <div class="text">Немного кодил на js. Был небольшой опыт с python, php</div>
                 </div>
-                <div class="questions__english">
-                    <p>Уровень английского</p>
-                    <p>Думаю около среднего. Могу писать, читать, говорить</p>
+                <div class="question">
+                    <div class="heading">Уровень английского</div>
+                    <div class="text">Думаю около среднего. Могу писать, читать, говорить</div>
                 </div>
-                <div class="questions__goal-of-course">
-                    <p>Цели посещения курсов</p>
-                    <p>Получить новые знания в данном направлении для дальнейшего поиска работы</p>
+                <div class="question">
+                    <div class="heading">Цели посещения курсов</div>
+                    <div class="text">Получить новые знания в данном направлении для дальнейшего поиска работы</div>
                 </div>
-                <div class="questions__where-found">
-                    <p>Откуда узнали про курс</p>
-                    <p>От друга из другого города. Видел плакат в первом корпусе универа</p>
+                <div class="question">
+                    <div class="heading">Откуда узнали про курс</div>
+                    <div class="text">От друга из другого города. Видел плакат в первом корпусе универа</div>
                 </div>
-                <div class="questions__git">
-                    <p>Ссылки на гитхаб, линкедин</p>
-                    <ul>
+                <div class="question">
+                    <div class="heading">Ссылки на гитхаб, линкедин</div>
+                    <ul class="question__list">
                         <li>
-                            <a href="https://github.com/aRT173" target="_blank">github</a>
+                            <a class="text" href="https://github.com/aRT173" target="_blank">github</a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/artem-afanasyev-94a1a8250/"
+                            <a class="text" href="https://www.linkedin.com/in/artem-afanasyev-94a1a8250/"
                                 target="_blank">linkedin</a>
                         </li>
                     </ul>
                 </div>
-                <div class="questions__about">
-                    <p>Контактная информация и город</p>
-                    <ul>
-                        <li>Skype: live:.cid.9af270c7eabc938d</li>
-                        <li><a href="mailto:artem.afanasev.22820@gmail.com">artem.afanasev.22820@gmail.com</a></li>
-                        <li><a href="tel:+79279868765">+79279868765</a></li>
-                        <li>Город: Саранск</li>
+                <div class="question">
+                    <div class="heading">Контактная информация и город</div>
+                    <ul class="question__list">
+                        <li class="text">Skype: live:.cid.9af270c7eabc938d</li>
+                        <li><a class="text" href="mailto:artem.afanasev.22820@gmail.com">artem.afanasev.22820@gmail.com</a></li>
+                        <li><a class="text" href="tel:+79279868765">+79279868765</a></li>
+                        <li class="text">Город: Саранск</li>
                     </ul>
                 </div>
             </section>
