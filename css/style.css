@@ -95,7 +95,8 @@ html {
     width: 200px;
  }
  .question__list {
-    width: 160px;
+    width: 160px; 
+    
  }
  .heading {
     padding-left: 50px;
