@@ -92,14 +92,20 @@ html {
     justify-content: center;
  }
  .heading, .text {
-    width: 200px;
+    width: 275px;
  }
  .question__list {
-    width: 160px; 
-    
+ 
+ }
+ .question__list li {
+    margin: 0;
+    padding: 0;
  }
  .heading {
     padding-left: 50px;
+ }
+ .im__photo {
+    margin-left: 30px;
  }
 
     
