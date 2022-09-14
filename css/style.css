@@ -94,13 +94,6 @@ html {
  .heading, .text {
     width: 275px;
  }
- .question__list {
- 
- }
- .question__list li {
-    margin: 0;
-    padding: 0;
- }
  .heading {
     padding-left: 50px;
  }
