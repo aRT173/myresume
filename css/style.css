@@ -5,6 +5,7 @@ box-sizing: border-box;
     height: 100%;
 }
 
+/*футер всё равно не прижат к низу экрана, все три свойства стало быть лишние*/
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -14,6 +15,7 @@ box-sizing: border-box;
 /* ШАПКА */
 .header {
     height: 100px;
+    /*цвета указывают в hex формате за редким исключением, здесь #A8ECFA*/
     background-color: rgb(168, 236, 250);
     display: flex;
     justify-content: center;
@@ -24,6 +26,8 @@ box-sizing: border-box;
 }
 
 /* ОСНОВНОЙ КОНТЕНТ */
+/*вёрстка флексами не по назначению, здесь достаточно было*/
+/*указать max-width: Npx; margin: 0 auto, флексы лишние*/
 main {
     display: flex;
     justify-content: center;
@@ -31,6 +35,10 @@ main {
 .questions {
 
 }
+
+/*здесь и далее очень плохие селекторы,*/
+/*по хорошему добавляют классы к конкретным тегам в html,
+т.е. никакой проблемы указать этот блок как .question */
 .questions > div:nth-child(n+2) { /* '>' - обращение к дочерним тегам; n+2 начиная со второго элемента*/
     display: flex;
     border-bottom: 1px solid #CAD4DD;
@@ -39,6 +47,11 @@ main {
 }
 
 .questions p:nth-child(odd) {
+    /*как и в случае с программированием*/
+    /*в css вообще не привествуется дублирование,*/
+    /*обычно заголовки имеют один шрифт, контент другой,*/
+    /*перечислять дополнительно заново css свойства - плохая практика,*/
+    /*по хорошему это .heading и .text ниже*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 300px;
     font-weight: 700;
@@ -78,6 +91,8 @@ main {
 .im__name {
     padding-left: 10px;
 }
+
+/*нет, гораздо лучше дать конкретному блоку необходимый класс*/
 .im__name p:nth-child(2) {
     width: auto;
     max-width: 420px;
@@ -86,6 +101,7 @@ main {
     margin-top: 50px;
     text-align: start;
 }
+/*все эти пустые селекторы ни к чему*/
 .questions__edu {
 }
 .questions__job {
